@@ -20,3 +20,7 @@
 \a cdsLibManager->cellLineEdit->value = "PMOS_IV_3"
 \a cdsLibManager->cellListBox->value = "inv"
 \a cdsLibManager->cellLineEdit->value = "inv"
+\o MPS service: shutdown
+\o libManager is exiting.
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a exit(0)
