@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      cfarls
+HostName                       student04.cse.nd.edu
+ProcessIdentifier              3756
+ProcessCreationTime_UTC        1729210314
+ProcessCreationTime_Readable   Thu Oct 17 20:11:54 2024 EDT
+AppIdentifier                  /escnfs/home/csesoft/cadence/installs/IC617/tools/dfII/bin/64bit/libManager
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/dic-lab3/libManager.log
+TimeEditLocked                 Thu Oct 17 20:11:55 2024 EDT

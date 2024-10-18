@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      cfarls
+HostName                       student06.cse.nd.edu
+ProcessIdentifier              32628
+ProcessCreationTime_UTC        1726704809
+ProcessCreationTime_Readable   Wed Sep 18 20:13:29 2024 EDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/lab2_cfarls/sim_NMOS_IV_3/schematic/sch.oa.cdslck
+TimeEditLocked                 Wed Sep 18 20:29:35 2024 EDT
