@@ -1,0 +1,106 @@
+@(#)$CDS: LVS version 6.1.7-64b 12/16/2018 07:37 (sjfhw317) $
+
+Command line: /escnfs/home/csesoft/cadence/installs/IC617/tools.lnx86/dfII/bin/64bit/LVS -dir /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/hw2_cfarls/sim_nand2_dc -l -s -t /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/hw2_cfarls/sim_nand2_dc/layout /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/hw2_cfarls/sim_nand2_dc/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/hw2_cfarls/sim_nand2_dc/layout/netlist
+       count
+        6               nets
+        4               terminals
+        2               pmos
+        2               nmos
+
+    Net-list summary for /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/hw2_cfarls/sim_nand2_dc/schematic/netlist
+       count
+        6               nets
+        5               terminals
+        1               cap
+        2               pmos
+        2               nmos
+
+
+    Terminal correspondence points
+    N4        N4        A
+    N5        N3        AandB
+    N3        N5        B
+    N2        N0        gnd!
+
+Devices in the rules but not in the netlist:
+        nfet pfet nmos4 pmos4
+
+    Ill-defined correspondence points.
+
+	N2	N0  Accepted because one is a subset of the other
+	N5	N3  Accepted because one is a subset of the other
+	N5	N3  Accepted because one is a subset of the other
+	N2	N0  Accepted because one is a subset of the other
+
+
+        Device summary for schematic
+                   bad  total
+             cap     1      1
+
+The net-lists failed to match.
+
+                             layout  schematic
+                                instances
+        un-matched              0       1      
+        rewired                 0       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  4       5      
+        total                   4       5      
+
+                                  nets
+        un-matched              0       0      
+        merged                  0       0      
+        pruned                  0       0      
+        active                  6       6      
+        total                   6       6      
+
+                                terminals
+        un-matched              0       0      
+        matched but
+        different type          1       1      
+        total                   4       5      
+
+
+Probe files from /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/hw2_cfarls/sim_nand2_dc/schematic
+
+devbad.out:
+I /I0/C0
+? Device does not cross-match.
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+? Terminal AandB's type in the schematic: output, in the layout: inputOutput
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/hw2_cfarls/sim_nand2_dc/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+? Terminal AandB's type in the layout: inputOutput, in the schematic: output
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
