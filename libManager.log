@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 10/30/2018 21:08 (sjfnl050) $
 \o Sub version:		sub-version  s231 
-\o Arguments:		-mpssession virtuoso24066 -mpshost student04 
+\o Arguments:		-mpssession virtuoso27052 -mpshost student04 
 \o Working Directory:	student04:/escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/cmz25
 \o 64-bit offsets
 \o Qt version: 		4.8.5
@@ -14,22 +14,21 @@
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
 \o Library Manager customization server connected.
-\a cdsLibManager->libListBox->value = "lab3_dmikolay"
-\a cdsLibManager->libLineEdit->value = "lab3_dmikolay"
-\a cdsLibManager->cellListBox->value = "NMOS_IV_3"
-\a cdsLibManager->cellLineEdit->value = "NMOS_IV_3"
+\a cdsLibManager->libListBox->value = "lab3_ZagrockiFarlsMikolay"
+\a cdsLibManager->libLineEdit->value = "lab3_ZagrockiFarlsMikolay"
+\a cdsLibManager->cellListBox->value = "adv.logic"
+\a cdsLibManager->cellLineEdit->value = "adv.logic"
+\a cdsLibManager->cellListBox->value = "sim_adv_circuit"
+\a cdsLibManager->cellLineEdit->value = "sim_adv_circuit"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->cellListBox->value = "PMOS_IV_3"
-\a cdsLibManager->cellLineEdit->value = "PMOS_IV_3"
+\a cdsLibManager->libListBox->value = "lab3_dmikolay"
+\a cdsLibManager->libLineEdit->value = "lab3_dmikolay"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->fileExitButton->value = t
-\o libManager is exiting.
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a exit(0)
+\a cdsLibManager->libListBox->value = "lab3_ZagrockiFarlsMikolay"
+\a cdsLibManager->libLineEdit->value = "lab3_ZagrockiFarlsMikolay"
+\a cdsLibManager->libListBox->value = "lab3_dmikolay"
+\a cdsLibManager->libLineEdit->value = "lab3_dmikolay"
