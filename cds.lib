@@ -15,6 +15,7 @@ DEFINE analogLib $IC/tools.lnx86/dfII/etc/cdslib/artist/analogLib
 DEFINE functional $IC/tools.lnx86/dfII/etc/cdslib/artist/functional
 DEFINE sbaLib $IC/tools.lnx86/dfII/etc/cdslib/artist/sbaLib
 
-DEFINE hw2_cfarls /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/dic-lab3/hw2_cfarls
-DEFINE lab2_cfarls /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/dic-lab3/lab2_cfarls
-DEFINE lab1_cfarls /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/dic-lab3/lab1_cfarls 
+DEFINE hw2_cfarls /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/cmz25/hw2_cfarls
+DEFINE lab2_cfarls /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/cmz25/lab2_cfarls
+DEFINE lab1_cfarls /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/cmz25/lab1_cfarls
+DEFINE lab3_dmikolay /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/cmz25/lab3_dmikolay
