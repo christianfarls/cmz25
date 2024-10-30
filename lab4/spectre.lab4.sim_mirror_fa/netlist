@@ -1,0 +1,81 @@
+
+// Library name: lab4_dmikolay
+// Cell name: pmos_8l
+// View name: schematic
+subckt pmos_8l D G S
+    P0 (S G D vdd!) ami06P w=12.0u l=600n as=1.8e-11 ad=1.8e-11 ps=27.0u \
+        pd=27.0u m=1 region=sat
+ends pmos_8l
+// End of subcircuit definition.
+
+// Library name: lab4_dmikolay
+// Cell name: nmos_4l
+// View name: schematic
+subckt nmos_4l D G S
+    N0 (D G S 0) ami06N w=6u l=600n as=9e-12 ad=9e-12 ps=15.0u pd=15.0u \
+        m=1 region=sat
+ends nmos_4l
+// End of subcircuit definition.
+
+// Library name: lab4_dmikolay
+// Cell name: pmos_1l
+// View name: schematic
+subckt pmos_1l D G S
+    P0 (S G D vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+ends pmos_1l
+// End of subcircuit definition.
+
+// Library name: lab4_dmikolay
+// Cell name: nmos_1l
+// View name: schematic
+subckt nmos_1l D G S
+    N0 (D G S 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u pd=6u \
+        m=1 region=sat
+ends nmos_1l
+// End of subcircuit definition.
+
+// Library name: lab4_dmikolay
+// Cell name: mirror_FA
+// View name: schematic
+subckt mirror_FA A B C CoutNeg SumNeg
+    I2 (CoutNeg C net33) pmos_8l
+    I1 (net33 B vdd!) pmos_8l
+    I0 (net33 A vdd!) pmos_8l
+    I5 (net31 B 0) nmos_4l
+    I4 (net31 A 0) nmos_4l
+    I3 (CoutNeg C net31) nmos_4l
+    I14 (net48 C vdd!) pmos_1l
+    I13 (SumNeg A net47) pmos_1l
+    I12 (net47 B net48) pmos_1l
+    I11 (net40 C vdd!) pmos_1l
+    I10 (net40 B vdd!) pmos_1l
+    I9 (SumNeg CoutNeg net40) pmos_1l
+    I8 (net40 A vdd!) pmos_1l
+    I7 (CoutNeg A net54) pmos_1l
+    I6 (net54 B vdd!) pmos_1l
+    I23 (net45 C 0) nmos_1l
+    I22 (net46 B net45) nmos_1l
+    I21 (SumNeg A net46) nmos_1l
+    I20 (net55 C 0) nmos_1l
+    I19 (net55 B 0) nmos_1l
+    I18 (net55 A 0) nmos_1l
+    I17 (SumNeg CoutNeg net55) nmos_1l
+    I16 (net53 B 0) nmos_1l
+    I15 (CoutNeg A net53) nmos_1l
+    V0 (vdd! 0) vsource type=dc dc=5
+ends mirror_FA
+// End of subcircuit definition.
+
+// Library name: lab4_dmikolay
+// Cell name: sim_mirror_FA
+// View name: schematic
+I0 (A0 B0 Cin0 Cout0Neg Sum0Neg) mirror_FA
+V3 (Cin0 0) vsource type=pulse val0=0 val1=5 period=4u delay=10n rise=2.5n \
+        fall=2.5n width=1.9975u
+V2 (B0 0) vsource type=pulse val0=0 val1=5 period=2u delay=10n rise=2.5n \
+        fall=2.5n width=997.5n
+V1 (A0 0) vsource type=pulse val0=0 val1=5 period=1u delay=10n rise=2.5n \
+        fall=2.5n width=497.5n
+C1 (Cout0Neg 0) capacitor c=140f m=1
+C0 (Sum0Neg 0) capacitor c=140f m=1

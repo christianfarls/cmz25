@@ -1,0 +1,5 @@
+
+// Library name: lab3_dmikolay
+// Cell name: part2_circuit
+// View name: schematic
+subckt part2_circuit a b c d e f y

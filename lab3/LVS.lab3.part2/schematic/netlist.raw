@@ -1,0 +1,27 @@
+t 5 A input
+t 4 B input
+t 3 AandB output
+
+n 1 vdd!
+n 0 gnd!
+n 3 /AandB
+n 4 /B
+n 5 /A
+n 8 /I4/net15
+
+; nmos4 Instance /I4/N1 = auLvs device Q0
+d nmos D G S B (p D S)
+i 0 nmos 8 4 0 0 " m 1 l 600e-9 w 4.8e-6 "
+
+; nmos4 Instance /I4/N0 = auLvs device Q1
+i 1 nmos 3 5 8 0 " m 1 l 600e-9 w 4.8e-6 "
+
+; pmos4 Instance /I4/P1 = auLvs device Q2
+d pmos D G S B (p D S)
+i 2 pmos 3 4 1 1 " m 1 l 600e-9 w 4.8e-6 "
+
+; pmos4 Instance /I4/P0 = auLvs device Q3
+i 3 pmos 3 5 1 1 " m 1 l 600e-9 w 4.8e-6 "
+t 0 gnd! global
+t 1 vdd! global
+

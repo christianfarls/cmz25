@@ -1,0 +1,5 @@
+"lab4_dmikolay.pmos_1l.schematic.termorder" (("D" "G" "S") ("D" "G" "S"))
+"lab4_dmikolay.mirror_FA.schematic.termorder" (("A" "B" "C" "CoutNeg" "SumNeg") ("A" "B" "C" "CoutNeg" "SumNeg"))
+"lab4_dmikolay.pmos_8l.schematic.termorder" (("D" "G" "S") ("D" "G" "S"))
+"lab4_dmikolay.nmos_1l.schematic.termorder" (("D" "G" "S") ("D" "G" "S"))
+"lab4_dmikolay.nmos_4l.schematic.termorder" (("D" "G" "S") ("D" "G" "S"))

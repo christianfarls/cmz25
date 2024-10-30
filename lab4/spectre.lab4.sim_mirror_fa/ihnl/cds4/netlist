@@ -1,0 +1,27 @@
+    I2 (CoutNeg C net33) pmos_8l
+    I1 (net33 B vdd!) pmos_8l
+    I0 (net33 A vdd!) pmos_8l
+    I5 (net31 B 0) nmos_4l
+    I4 (net31 A 0) nmos_4l
+    I3 (CoutNeg C net31) nmos_4l
+    I14 (net48 C vdd!) pmos_1l
+    I13 (SumNeg A net47) pmos_1l
+    I12 (net47 B net48) pmos_1l
+    I11 (net40 C vdd!) pmos_1l
+    I10 (net40 B vdd!) pmos_1l
+    I9 (SumNeg CoutNeg net40) pmos_1l
+    I8 (net40 A vdd!) pmos_1l
+    I7 (CoutNeg A net54) pmos_1l
+    I6 (net54 B vdd!) pmos_1l
+    I23 (net45 C 0) nmos_1l
+    I22 (net46 B net45) nmos_1l
+    I21 (SumNeg A net46) nmos_1l
+    I20 (net55 C 0) nmos_1l
+    I19 (net55 B 0) nmos_1l
+    I18 (net55 A 0) nmos_1l
+    I17 (SumNeg CoutNeg net55) nmos_1l
+    I16 (net53 B 0) nmos_1l
+    I15 (CoutNeg A net53) nmos_1l
+    V0 (vdd! 0) vsource type=dc dc=5
+ends mirror_FA
+// End of subcircuit definition.

@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "part2_circuit"
+  repList "spectre cmos_sch schematic"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/spectre.lab3.p2"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "lab3_dmikolay/part2_circuit/schematic" "part2_circuit" )
+ )
+( "part2_circuit" "ihnl/cds0/map" )
+ )
