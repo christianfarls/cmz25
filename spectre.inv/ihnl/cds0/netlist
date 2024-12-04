@@ -1,0 +1,4 @@
+    P0 (D G S vdd!) ami06P w=6u l=600n as=9e-12 ad=9e-12 ps=15.0u pd=15.0u \
+        m=1 region=sat
+ends PMOS_IV_3
+// End of subcircuit definition.

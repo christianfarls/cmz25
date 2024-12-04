@@ -1,0 +1,6 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(03Dec2024:23:18:33):( xrun processor_multi.sv -gui -access rwc -coverage ALL -covoverwrite )
+s2::(03Dec2024:23:39:28):( xrun processor_multi.sv -gui -access rwc -coverage ALL -covoverwrite )

@@ -1,0 +1,25 @@
+
+// Library name: lab1_dmikolay
+// Cell name: nor3
+// View name: schematic
+P2 (y c net19 vdd!) ami06P w=4.05u l=600n as=6.075e-12 ad=6.075e-12 \
+        ps=11.1u pd=11.1u m=1 region=sat
+P1 (net19 b net18 vdd!) ami06P w=4.05u l=600n as=6.075e-12 ad=6.075e-12 \
+        ps=11.1u pd=11.1u m=1 region=sat
+P0 (net18 a vdd! vdd!) ami06P w=4.05u l=600n as=6.075e-12 ad=6.075e-12 \
+        ps=11.1u pd=11.1u m=1 region=sat
+N2 (y a 0 0) ami06N w=4.05u l=600n as=6.075e-12 ad=6.075e-12 ps=11.1u \
+        pd=11.1u m=1 region=sat
+N1 (y b 0 0) ami06N w=4.05u l=600n as=6.075e-12 ad=6.075e-12 ps=11.1u \
+        pd=11.1u m=1 region=sat
+N0 (y c 0 0) ami06N w=4.05u l=600n as=6.075e-12 ad=6.075e-12 ps=11.1u \
+        pd=11.1u m=1 region=sat
+V2 (c 0) vsource type=pulse val0=0 val1=5 period=400n delay=10n rise=2.5n \
+        fall=2.5n width=197.5n
+V1 (b 0) vsource type=pulse val0=0 val1=5 period=200n delay=10n rise=2.5n \
+        fall=2.5n width=97.5n
+V0 (a 0) vsource type=pulse val0=0 val1=5 period=100n delay=10n rise=2.5n \
+        fall=2.5n width=47.5n
+V4 (0 0) vsource type=dc dc=0
+V3 (vdd! 0) vsource type=dc dc=5
+C0 (y 0) capacitor c=100.0f m=1

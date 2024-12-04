@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+lab2_dmikolay/PMOS_IV_3/schematic PMOS_IV_3
+lab2_dmikolay/sim_inverter/schematic sim_inverter
+lab2_dmikolay/NMOS_IV_3/schematic NMOS_IV_3
+lab2_dmikolay/inv/schematic inv
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

@@ -1,0 +1,5 @@
+
+// Library name: lab4_dmikolay
+// Cell name: nmos_1l
+// View name: schematic
+subckt nmos_1l D G S

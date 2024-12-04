@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "sim_nand2_dc"
+  repList "spectre cmos_sch schematic"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/spectre.2hw2"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "hw2_dmikolay/sim_nand2_dc/schematic" "sim_nand2_dc" )
+( "hw2_dmikolay/nand2/schematic" "nand2" )
+ )
+( "nand2" "ihnl/cds0/map" )
+( "sim_nand2_dc" "ihnl/cds1/map" )
+ )

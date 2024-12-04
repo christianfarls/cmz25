@@ -1,0 +1,8 @@
+CADENCE IHNL11146
+
+lab4_dmikolay pmos_8l schematic cds0
+lab4_dmikolay nmos_4l schematic cds1
+lab4_dmikolay pmos_1l schematic cds2
+lab4_dmikolay nmos_1l schematic cds3
+lab4_dmikolay mirror_FA schematic cds4
+lab4_dmikolay sim_mirror_FA schematic cds5

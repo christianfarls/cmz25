@@ -1,0 +1,15 @@
+CADENCE IHNL11140
+$model
+lab4_dmikolay/sim_mirror_FA/schematic sim_mirror_FA
+lab4_dmikolay/pmos_1l/schematic pmos_1l
+lab4_dmikolay/pmos_8l/schematic pmos_8l
+lab4_dmikolay/nmos_4l/schematic nmos_4l
+lab4_dmikolay/mirror_FA/schematic mirror_FA
+lab4_dmikolay/nmos_1l/schematic nmos_1l
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

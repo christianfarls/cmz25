@@ -1,0 +1,54 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.7 - CAT35 10/30/2018 21:09 (sjfnl050) $
+\o Sub version:		sub-version  s231 
+\o Arguments:		-display localhost:11.0 -mpssession virtuoso19581 -mpshost student04 -namespace CDBA -cdslib /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/cds.lib 
+\o Working Directory:	student04:/escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.8.5
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "basic"
+\a nrResizeWindow(cdsLibEditor list(112 135 500 400))
+\a cdsLibEditor->editAddLibButton->value = t
+\a newLibraryDialog->filePathComboBox->value = "/escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI"
+\a newLibraryDialog->useMappedName->value = nil
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(90 65 541 523))
+\a newLibraryDialog->libraryListBox->value = "controller_nn"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "controller_nn"
+\a newLibraryDialog->libraryListBox->value = "processor8_nn"
+\a newLibraryDialog->libraryName->value = "processor8_nn"
+\a newLibraryDialog->okButton->value = t
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 29 0)
+\o Active cell: 29 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->editAddLibButton->value = t
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(85 60 551 533))
+\a newLibraryDialog->libraryListBox->value = "controller_nn"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "controller_nn"
+\a newLibraryDialog->okButton->value = t
+\a nrListItemRename(cdsLibEditor->mainTable, 29 0 "controller_nn")
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 30 0)
+\o Active cell: 30 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->editAddLibButton->value = t
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(80 55 561 543))
+\a newLibraryDialog->cancelButton->value = t
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->fileSaveButton->value = t
+\a cdsLibEditor->fileExitButton->value = t
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a exit(0)

@@ -1,0 +1,13 @@
+
+// Library name: lab4_dmikolay
+// Cell name: sim_mirror_FA
+// View name: schematic
+I0 (A0 B0 Cin0 Cout0Neg Sum0Neg) mirror_FA
+V3 (Cin0 0) vsource type=pulse val0=0 val1=5 period=4u delay=10n rise=2.5n \
+        fall=2.5n width=1.9975u
+V2 (B0 0) vsource type=pulse val0=0 val1=5 period=2u delay=10n rise=2.5n \
+        fall=2.5n width=997.5n
+V1 (A0 0) vsource type=pulse val0=0 val1=5 period=1u delay=10n rise=2.5n \
+        fall=2.5n width=497.5n
+C1 (Cout0Neg 0) capacitor c=140f m=1
+C0 (Sum0Neg 0) capacitor c=140f m=1

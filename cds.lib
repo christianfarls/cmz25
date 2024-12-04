@@ -1,22 +1,35 @@
+# File Created by Daniel Mikolay at Wed Dec  4 02:01:04 2024
+# assisted by CdsLibEditor
 SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
-DEFINE      basic                   $CDK_DIR/lib/basic
-DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
-DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
---DEFINE      MOSIS_Layout_Test       $CDK_DIR/lib/MOSIS_Layout_Test
-DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
-DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
-DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
-DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
-DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
-DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
-DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
-DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+DEFINE basic $CDK_DIR/lib/basic
+DEFINE NCSU_Analog_Parts $CDK_DIR/lib/NCSU_Analog_Parts
+DEFINE NCSU_Digital_Parts $CDK_DIR/lib/NCSU_Digital_Parts
+#DEFINE      MOSIS_Layout_Test       $CDK_DIR/lib/MOSIS_Layout_Test
+DEFINE NCSU_TechLib_ami06 $CDK_DIR/lib/NCSU_TechLib_ami06
+DEFINE NCSU_TechLib_ami16 $CDK_DIR/lib/NCSU_TechLib_ami16
+DEFINE NCSU_TechLib_hp06 $CDK_DIR/lib/NCSU_TechLib_hp06
+DEFINE NCSU_TechLib_tsmc02 $CDK_DIR/lib/NCSU_TechLib_tsmc02
+DEFINE NCSU_TechLib_tsmc02d $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+DEFINE NCSU_TechLib_tsmc03 $CDK_DIR/lib/NCSU_TechLib_tsmc03
+DEFINE NCSU_TechLib_tsmc03d $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+DEFINE NCSU_TechLib_tsmc04_4M2P $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+DEFINE UofU_Analog_Parts ~/esc-courses/fa24-cse-30342.01/public/UofU_Analog_Parts
+DEFINE UofU_Example ~/esc-courses/fa24-cse-30342.01/public/UofU_Example
+DEFINE UofU_Digital_Parts_v1_2 ~/esc-courses/fa24-cse-30342.01/public/UofU_Digital_Parts_v1_2
+DEFINE UofU_TechLib_ami06 ~/esc-courses/fa24-cse-30342.01/public/UofU_TechLib_ami06
+DEFINE UofU_Pads ~/esc-courses/fa24-cse-30342.01/public/UofU_Pads
 DEFINE analogLib $IC/tools.lnx86/dfII/etc/cdslib/artist/analogLib
 DEFINE functional $IC/tools.lnx86/dfII/etc/cdslib/artist/functional
 DEFINE sbaLib $IC/tools.lnx86/dfII/etc/cdslib/artist/sbaLib
 
-DEFINE hw2_cfarls /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/cmz25/hw2_cfarls
-DEFINE lab2_cfarls /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/cmz25/lab2_cfarls
-DEFINE lab1_cfarls /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/cmz25/lab1_cfarls
-DEFINE lab3_dmikolay /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/cmz25/lab3_dmikolay
-DEFINE lab3_ZagrockiFarlsMikolay /escnfs/courses/fa24-cse-30342.01/dropbox/cfarls/VLSI/cmz25/lab3_ZagrockiFarlsMikolay
+DEFINE lab1_dmikolay /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/lab1_dmikolay
+DEFINE lab2_dmikolay /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/lab2_dmikolay
+DEFINE hw2_dmikolay /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/hw2_dmikolay
+DEFINE lab3_dmikolay /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/lab3_dmikolay
+DEFINE lab4_dmikolay /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/lab4_dmikolay
+DEFINE wordlib8 wordlib8
+DEFINE processor8 processor8
+DEFINE muddlib11 muddlib11
+DEFINE HMC_Sheets_8ths oa/HMC_Sheets_8ths
+DEFINE processor8_nn processor8_nn
+DEFINE controller_nn controller_nn

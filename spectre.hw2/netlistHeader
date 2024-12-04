@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Sep 25 21:51:29 2024
+// Design library name: hw2_dmikolay
+// Design cell name: sim_nand2_dc
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

@@ -1,0 +1,94 @@
+@(#)$CDS: LVS version 6.1.7-64b 12/16/2018 07:37 (sjfhw317) $
+
+Command line: /escnfs/home/csesoft/cadence/installs/IC617/tools.lnx86/dfII/bin/64bit/LVS -dir /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/LVS -l -s -x/escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/LVS/xref.out -f -t /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/LVS/layout /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Creating cross reference file /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/LVS/xref.out.
+Fixed device checking is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/LVS/layout/netlist
+       count
+        17              nets
+        7               terminals
+        12              pmos
+        12              nmos
+
+    Net-list summary for /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/LVS/schematic/netlist
+       count
+        17              nets
+        7               terminals
+        12              pmos
+        12              nmos
+
+
+    Terminal correspondence points
+    N13       N13       A
+    N12       N3        B
+    N11       N18       C
+    N15       N5        CoutNeg
+    N16       N14       SumNeg
+    N10       N1        gnd!
+    N14       N0        vdd!
+
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+                             layout  schematic
+                                instances
+        un-matched              0       0      
+        rewired                 0       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  24      24     
+        total                   24      24     
+
+                                  nets
+        un-matched              0       0      
+        merged                  0       0      
+        pruned                  0       0      
+        active                  17      17     
+        total                   17      17     
+
+                                terminals
+        un-matched              0       0      
+        matched but
+        different type          0       0      
+        total                   7       7      
+
+
+Probe files from /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /escnfs/courses/fa24-cse-30342.01/dropbox/dmikolay/VLSI/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:

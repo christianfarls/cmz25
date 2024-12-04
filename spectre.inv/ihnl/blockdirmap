@@ -1,0 +1,6 @@
+CADENCE IHNL11144
+
+lab2_dmikolay PMOS_IV_3 schematic cds0
+lab2_dmikolay NMOS_IV_3 schematic cds1
+lab2_dmikolay inv schematic cds2
+lab2_dmikolay sim_inverter schematic cds3

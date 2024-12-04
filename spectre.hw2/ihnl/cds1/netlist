@@ -1,0 +1,9 @@
+
+// Library name: hw2_dmikolay
+// Cell name: sim_nand2_dc
+// View name: schematic
+I4 (A B AandB) nand2
+V1 (A 0) vsource type=pulse val0=0 val1=5 period=100n delay=10n \
+        rise=500.0p fall=500.0p width=49.5n
+V0 (B 0) vsource type=pulse val0=0 val1=5 period=200n delay=10n \
+        rise=500.0p fall=500.0p width=99.5n

@@ -1,0 +1,65 @@
+// Default Spectre Simulation run title card.
+
+
+// Generated for: spectre
+// Generated on: Sep  4 23:19:25 2024
+// Design library name: lab1_dmikolay
+// Design cell name: nor3
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+
+
+// Included Model Files
+
+include "$CDK_DIR/models/spectre/standalone/ami06N.m"
+
+include "$CDK_DIR/models/spectre/standalone/ami06P.m"
+
+
+
+// Library name: lab1_dmikolay
+// Cell name: nor3
+// View name: schematic
+P2 (y c net19 vdd!) ami06P w=4.05u l=600n as=6.075e-12 ad=6.075e-12 \
+        ps=11.1u pd=11.1u m=1 region=sat
+P1 (net19 b net18 vdd!) ami06P w=4.05u l=600n as=6.075e-12 ad=6.075e-12 \
+        ps=11.1u pd=11.1u m=1 region=sat
+P0 (net18 a vdd! vdd!) ami06P w=4.05u l=600n as=6.075e-12 ad=6.075e-12 \
+        ps=11.1u pd=11.1u m=1 region=sat
+N2 (y a 0 0) ami06N w=4.05u l=600n as=6.075e-12 ad=6.075e-12 ps=11.1u \
+        pd=11.1u m=1 region=sat
+N1 (y b 0 0) ami06N w=4.05u l=600n as=6.075e-12 ad=6.075e-12 ps=11.1u \
+        pd=11.1u m=1 region=sat
+N0 (y c 0 0) ami06N w=4.05u l=600n as=6.075e-12 ad=6.075e-12 ps=11.1u \
+        pd=11.1u m=1 region=sat
+V2 (c 0) vsource type=pulse val0=0 val1=5 period=400n delay=10n rise=2.5n \
+        fall=2.5n width=197.5n
+V1 (b 0) vsource type=pulse val0=0 val1=5 period=200n delay=10n rise=2.5n \
+        fall=2.5n width=97.5n
+V0 (a 0) vsource type=pulse val0=0 val1=5 period=100n delay=10n rise=2.5n \
+        fall=2.5n width=47.5n
+V4 (0 0) vsource type=dc dc=0
+V3 (vdd! 0) vsource type=dc dc=5
+C0 (y 0) capacitor c=100.0f m=1
+
+// Spectre Source Statements
+
+// Spectre Analyses and Output Options Statements
+
+// Output Options
+simOptions options
+//+      reltol = 1.00000000E-03
+//+      vabstol = 1.00000000E-06
+//+      iabstol = 1.00000000E-12
+//+      temp = 27
+//+      save = allpub
+//+      currents = selected
+
+// Analyses
+// dc1 dc oppoint=logfile homotopy=all
+tran1 tran start=0 stop=210n step=0.1n errpreset=moderate
+
+
+
+// End of Netlist
